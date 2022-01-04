@@ -16,8 +16,8 @@ const Card = ({ product, children }) => {
     const classes = useStyles();
 
     return(
-        <Grid item xs={3}>
-            <Paper className={classes.paper}>
+        <Grid className="col-12 col-md-4 px-md-1 mt-1">
+            <Paper className={classes.paper} >
                 <Grid container direction='column'>
                     <Grid item>
                     <img width="140px" src={product.image} alt={product.name_product}/>

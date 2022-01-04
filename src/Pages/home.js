@@ -8,6 +8,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       marginTop: '5px',
+      maxWidth: '1200px',
+      margin: '0 auto'
     },
     paper: {
       padding: theme.spacing(2),
@@ -45,8 +47,8 @@ const HomePage = () => {
     }
 
     return(
-        <Grid container spacing={3} className={classes.root}>
-            <Grid item xs={3}>
+        <Grid container className={classes.root}>
+            <Grid item className="col-12 col-md-3 makeStyles-root-1">
                 <Paper className={classes.paper}>
                     <Typography variant='h5'>
                         Categorias

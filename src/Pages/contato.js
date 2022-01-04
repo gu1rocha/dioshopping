@@ -81,7 +81,7 @@ const Contatos = () => {
                         <div className="card-body">
                             <h5 className="card-title">{content.email}</h5>
                             <p className="card-text">{content.message}</p>
-                            <p className="card-text"><small className="text-muted">{content.created_at}</small></p>
+                            <p className="card-text"><small className="text-muted">{(content.created_at).replace(/(\d*)-(\d*)-(\d*)T(\d*):(\d*):(\d*).*/, '$3/$2/$1 $4:$5:$6')}</small></p>
                         </div>
                     </div>
                 )
